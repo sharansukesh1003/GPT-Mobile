@@ -45,12 +45,12 @@ class OpenAIAPI {
     try {
       final request = ChatCompleteText(messages: [
         Map.of({"role": "user", "content": message})
-      ], model: kChatGptTurbo0301Model, maxToken: 1000);
+      ], model: ChatModel.gptTurbo0301, maxToken: 1000);
       final response = await openAI!.onChatCompletion(
         request: request,
       );
-      Logger().i(response!.choices[0].message.content);
-      return response.choices[0].message.content;
+      Logger().i(response!.choices[0].message!.content);
+      return response.choices[0].message!.content;
     } catch (error) {
       Logger().e(error);
       return null;
