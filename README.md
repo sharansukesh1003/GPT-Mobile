@@ -32,9 +32,3 @@ If you'd like to contribute to the codebase, feel free to fork the repository an
 ## Support
 
 If you encounter any issues while using the app, please reach out to the developer at sharansukesh103@gmail.com for assistance.
-
-## Acknowledgements
-
-- This app was developed as a personal project by [your name].
-- The app uses GPT, a language model developed by OpenAI.
-- The app UI is designed to be similar to the ChatGPT website.
